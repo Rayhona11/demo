@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block{
+    width:100px;
+    height: 300px;
+    background-color: blue;
+    border: ridge white 5px;
+    border-radius: 50px;
+    margin: auto;
+    align-items: center;
+    margin-top:150px;
+}
+
+body{
+    background-color: blue;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    border-radius:45%;
+    background-color: white;
+    margin-left: 5px;
+
+    /* ANIMATION */
+     animation-name: circlee;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+}
+
+@keyframes circlee{
+    from{
+        transform: translateY(0)
+     
+    }
+    to{
+        transform:translateY(200px);
+        opacity: .3;
+        border-radius: 55%;
+    }
+}
